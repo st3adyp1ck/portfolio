@@ -3769,14 +3769,15 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  
 }
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
 
 .navbar-nav {
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-x: 0.2rem;
+  --bs-nav-link-padding-y: 0.4rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
@@ -3786,13 +3787,16 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  align-items: end;
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--bs-navbar-active-color);
+  
 }
 .navbar-nav .dropdown-menu {
   position: static;
+  
 }
 
 .navbar-text {
@@ -11743,4 +11747,11 @@ html {
 }
 .small-copyright {
   font-size: 14px;
+}
+
+.oval-image {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit:cover;
 }

@@ -11755,6 +11755,7 @@ html {
   border-radius: 50%;
   object-fit:cover;
   flex: 1;
+  margin-right: 45px;
 }
 
     @media only screen and (max-width: 767px) {

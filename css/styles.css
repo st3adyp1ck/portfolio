@@ -11570,8 +11570,6 @@ html {
   background: linear-gradient(135deg, black 0%, red 100%);
 }
 
-
-
 .text-gradient {
   background: -webkit-linear-gradient(135deg, black 0%, red 100%);
   -webkit-background-clip: text;
@@ -11600,7 +11598,8 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
-.profile .profile-img {
+
+.profile-img {
   height: 80vw;
   max-height: 45rem;
   position: absolute;

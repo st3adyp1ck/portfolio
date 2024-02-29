@@ -11753,7 +11753,7 @@ html {
   width: 250px;
   height: 300px;
   border-radius: 50%;
-  object-fit:cover;
+  object-fit: cover;
   flex: 1;
   margin-right: 45px;
 }
@@ -11761,6 +11761,7 @@ html {
     @media only screen and (max-width: 767px) {
         .oval-image {
             display: none;
+      
         }
     }
    

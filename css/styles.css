@@ -11772,3 +11772,24 @@ html {
           justify-content: center;
       }
     }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      margin-top: 25px;
+      margin-bottom: 35px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      border: none; /* Remove default border */
+  }

@@ -1,0 +1,121 @@
+/* Global styles */
+html {
+  background-color: rgb(63, 63, 149);
+  color: #bd9090;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Input fields and button */
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid #bd9090;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #4c4ca1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3a85;
+}
+
+/* Responsive styling for lists */
+ul,
+ol {
+  list-style-position: inside;
+  text-align: left;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/* Error styling for invalid input */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.domlist {
+  list-style-position: inside;
+  text-align: left;
+  margin: 0 auto;
+  width: fit-content;
+  padding-left: 0;
+  margin-left: 20px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  ul,
+  ol {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input[type="text"] {
+    width: 130px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  ul,
+  ol {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  body {
+    padding: 5px;
+  }
+}

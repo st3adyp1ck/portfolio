@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ilya Belous - Project Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Projects Section-->
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">JavaScript Practice Projects</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Project Card: Guess My Number -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder"><a href='assets/Challenges/Guess-My-Number/index.html'>"Guess a Number" Mini-Game</a></h2>
+                                        <p>Guess My Number is a fun, interactive JavaScript-based game where the player tries to guess a randomly generated number between 1 and 20.</p>
+                                        <h3>JavaScript Methods Used:</h3>
+                                        <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#guessMyNumberMethods">Show/Hide Methods</button>
+                                        <div id="guessMyNumberMethods" class="collapse">
+                                            <ul>
+                                                <li><strong>Strict Mode & DOM Manipulation:</strong>
+                                                  <ul>
+                                                    <li><code>'use strict';</code> - Enables strict mode, catching common coding mistakes.</li>
+                                                    <li><code>document.querySelector()</code> - Selects elements to manipulate.</li>
+                                                    <li><code>.textContent</code>, <code>.value</code>, and <code>.style</code> - Used to get or set text, input values, and styles.</li>
+                                                  </ul>
+                                                </li>
+                                                <li><strong>Event Listeners & Functions:</strong>
+                                                  <ul>
+                                                    <li><code>addEventListener('click', function() {})</code> - Adds click event listeners for interactivity.</li>
+                                                    <li>Arrow functions <code>=></code> and helper functions like <code>displayMessage()</code> encapsulate repeated logic.</li>
+                                                  </ul>
+                                                </li>
+                                                <li><strong>Math & Game Logic:</strong>
+                                                  <ul>
+                                                    <li><code>Math.random()</code> and <code>Math.trunc()</code> - Used to generate random numbers.</li>
+                                                    <li><code>if</code>/<code>else if</code> statements and ternary operators handle game logic (e.g., comparing guesses, winning, or losing).</li>
+                                                  </ul>
+                                                </li>
+                                                <li><strong>State Management & Reusability:</strong>
+                                                  <ul>
+                                                    <li>Global variables (<code>score</code>, <code>secretNumber</code>, <code>highScore</code>) maintain game state.</li>
+                                                    <li>Reusability through functions (<code>displayMessage()</code>, <code>updateScore()</code>) to avoid repetitive code.</li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                        </div>
+                                    </div>                             
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card: Pig Game -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center">
+                                    <div class="p-5">
+                                        <h2 class="fw-bolder"><a href="assets/Challenges/Pig-Game/index.html">"Pig Game" Mini-Game</a></h2>
+                                        <p>Pig Game is a two-player dice game built using JavaScript. Players take turns rolling a dice to accumulate points.</p>
+                                        <h3>JavaScript Methods Used:</h3>
+                                        <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#pigGameMethods">Show/Hide Methods</button>
+                                        <div id="pigGameMethods" class="collapse">
+                                            <ul>
+                                              <li><strong>Strict Mode & DOM Manipulation:</strong>
+                                                <ul>
+                                                  <li><code>'use strict';</code> - Enables strict mode to catch errors.</li>
+                                                  <li><code>document.querySelector()</code> and <code>document.getElementById()</code> - Used to select and manipulate HTML elements like player scores, current score, and dice image.</li>
+                                                  <li><code>.textContent</code> and <code>.style</code> - Modify the text content and styles of elements (e.g., changing active player visuals).</li>
+                                                </ul>
+                                              </li>
+                                              <li><strong>Event Listeners:</strong>
+                                                <ul>
+                                                  <li><code>addEventListener()</code> - Listens for user actions (e.g., roll dice, hold score, reset game).</li>
+                                                </ul>
+                                              </li>
+                                              <li><strong>Game Logic with Conditional Statements:</strong>
+                                                <ul>
+                                                  <li><code>if</code>/<code>else if</code> - Handle game flow (e.g., checking if a player rolls a 1, switching turns, checking for a winner).</li>
+                                                </ul>
+                                              </li>
+                                              <li><strong>Random Dice Rolls:</strong>
+                                                <ul>
+                                                  <li><code>Math.random()</code> and <code>Math.trunc()</code> - Used to simulate random dice rolls between 1 and 6.</li>
+                                                </ul>
+                                              </li>
+                                              <li><strong>State Management & Game Reset:</strong>
+                                                <ul>
+                                                  <li>Global variables (<code>scores</code>, <code>currentScore</code>, <code>activePlayer</code>) manage the game state across player turns and game resets.</li>
+                                                  <li>Functions reset the game state and handle switching between players.</li>
+                                                </ul>
+                                              </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Project Card: Simple Calculator -->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+  <div class="card-body p-0">
+      <div class="d-flex align-items-center">
+          <div class="p-5">
+              <h2 class="fw-bolder"><a href="/assets/Challenges/Calculator/index.html">Simple Calculator</a></h2>
+              <p>This tool allows you to perform simple addition using JavaScript. It’s designed to be straightforward and easy to use. Just input two numbers, and the calculator will return their sum. If one of the fields is left blank, you'll be prompted to enter a number.</p>
+              <h3>JavaScript Methods Used:</h3>
+              <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#calculatorMethods">Show/Hide Methods</button>
+              <div id="calculatorMethods" class="collapse">
+                  <ul>
+                      <li><strong>DOM Manipulation:</strong>
+                          <ul>
+                              <li><em>document.getElementById()</em>: retrieves elements by id</li>
+                              <li><em>textContent</em>: updates text content</li>
+                              <li><em>classList.add()/remove()</em>: manages CSS classes dynamically</li>
+                          </ul>
+                      </li>
+                      <li><strong>Event Handling:</strong> The <em>onclick</em> method triggers a specified function when the button is clicked, handling user interaction.</li>
+                      <li><strong>Type Conversion:</strong> <em>Number()</em> converts strings to numbers for calculations, and <em>parseInt()</em>/<em>parseFloat()</em> handle integer and decimal conversion.</li>
+                      <li><strong>Conditional Logic:</strong> <em>if</em> statements control the logic flow, and <em>isNaN()</em> validates if inputs are not numbers.</li>
+                      <li><strong>String Handling:</strong> Template Literals (<code>${}</code>) allow embedding expressions into strings, making concatenation and formatting easier.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

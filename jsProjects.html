@@ -19,6 +19,21 @@
 </head>
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
+      <!-- Navigation Section-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ilya Belous</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         <!-- Projects Section-->
         <section class="py-5">
             <div class="container px-5 mb-5">
@@ -33,6 +48,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
                                         <h2 class="fw-bolder"><a href='assets/Challenges/Guess-My-Number/index.html'>"Guess a Number" Mini-Game</a></h2>
+                                        <h4>ALL SCREEN SIZES</h4>
                                         <p>Guess My Number is a fun, interactive JavaScript-based game where the player tries to guess a randomly generated number between 1 and 20.</p>
                                         <h3>JavaScript Methods Used:</h3>
                                         <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#guessMyNumberMethods">Show/Hide Methods</button>
@@ -76,6 +92,7 @@
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
                                         <h2 class="fw-bolder"><a href="assets/Challenges/Pig-Game/index.html">"Pig Game" Mini-Game</a></h2>
+                                        <h4>TABLETS AND LARGER</h4>
                                         <p>Pig Game is a two-player dice game built using JavaScript. Players take turns rolling a dice to accumulate points.</p>
                                         <h3>JavaScript Methods Used:</h3>
                                         <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#pigGameMethods">Show/Hide Methods</button>
@@ -123,6 +140,7 @@
       <div class="d-flex align-items-center">
           <div class="p-5">
               <h2 class="fw-bolder"><a href="/assets/Challenges/Calculator/index.html">Simple Calculator</a></h2>
+              <h4>ALL SCREEN SIZES</h4>
               <p>This tool allows you to perform simple addition using JavaScript. It’s designed to be straightforward and easy to use. Just input two numbers, and the calculator will return their sum. If one of the fields is left blank, you'll be prompted to enter a number.</p>
               <h3>JavaScript Methods Used:</h3>
               <button class="btn btn-primary mb-3" data-bs-toggle="collapse" data-bs-target="#calculatorMethods">Show/Hide Methods</button>
@@ -150,7 +168,44 @@
                 </div>
             </section>
         </main>
+ <!-- Call to action section-->
+ <section class="py-5 bg-gradient-primary-to-secondary text-white">
+  <div class="container px-5 my-5">
+      <div class="text-center">
+          <h2 class="display-4 fw-bolder mb-4">Impressed by My Work? Let’s Create Something Amazing Together!</h2>
+          <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+      </div>
+  </div>
+</section>
+</main>
+<!-- Footer-->
+<footer class="bg-white py-4 mt-auto">
+<div class="container px-5">
+  <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+      <div class="col-auto">
+          <div class="small m-0 mb-3"><a href="index.html">Home</a></div>
+      </div>
+      
+      <div class="col-auto">
+          <div class="small m-0 mb-3"><a href="resume.html">Resume</a></div>
+      </div>
+          
+      <div class="col-auto">
+          <div class="small m-0 mb-3"><a href="projects.html">Projects</a></div>
+          </div>
+      
+          <div class="col-auto">
+          <div class="small m-0 mb-3"><a href="contact.html">Contact</a></div>
+          </div>
+          
+          <hr>
+          
+          <div class="small text-center m-0">Copyright &copy; Ilya Belous 2024</div>
+      </div>
 
+  </div>
+</div>
+</footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>

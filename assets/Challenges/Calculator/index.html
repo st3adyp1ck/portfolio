@@ -19,7 +19,38 @@
         max-width: 1200px;
       }
 
-      /* Lists: Unordered and ordered lists share similar styles */
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+
+      /* Input fields and button */
+      input[type="text"] {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        border: 2px solid #bd9090;
+        width: 200px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        background-color: #4c4ca1;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #3a3a85;
+      }
+
+      /* Responsive styling for lists */
       ul,
       ol {
         list-style-position: inside;
@@ -41,6 +72,59 @@
         width: fit-content;
         padding-left: 0;
         margin-left: 20px;
+      }
+
+      /* Media Queries for responsive design */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        input[type="text"] {
+          width: 150px;
+          font-size: 1rem;
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 8px 15px;
+        }
+
+        ul,
+        ol {
+          width: 90%;
+          font-size: 0.9rem;
+        }
+
+        body {
+          padding: 5px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        input[type="text"] {
+          width: 130px;
+          font-size: 0.9rem;
+        }
+
+        button {
+          font-size: 0.9rem;
+          padding: 6px 12px;
+        }
+
+        ul,
+        ol {
+          width: 100%;
+          font-size: 0.8rem;
+        }
+
+        body {
+          padding: 5px;
+        }
       }
     </style>
   </head>
@@ -71,12 +155,10 @@
     <!-- Step-by-step instructions for the calculator -->
     <ol>
       <li><strong>Enter Numbers:</strong> Provide a number in both input fields.</li>
-
       <li>
         <strong>Calculate Result:</strong> Click the ‘Calculate’ button to display the
         result.
       </li>
-
       <li>
         <strong>Mandatory Input:</strong> Both fields must contain numbers. An error
         message will appear if either field is left blank.
@@ -100,16 +182,13 @@
         when the button is clicked, handling user interaction.
       </li>
       <li>
-        <strong>Event Handling:</strong> The onclick method triggers a specified function
-        when the button is clicked, handling user interaction.
-      </li>
-      <li>
-        <strong>Type Conversion:</strong> Number() converts strings to numbers for
-        calculations, and parseInt()/parseFloat() handle integer and decimal conversion.
+        <strong>Type Conversion:</strong> <em>Number()</em> converts strings to numbers
+        for calculations, and parseInt()/parseFloat() handle integer and decimal
+        conversion.
       </li>
       <li>
         <strong>Conditional Logic:</strong> if statements control the logic flow, and
-        isNaN() validates if inputs are not numbers.
+        <em>isNaN()</em> validates if inputs are not numbers.
       </li>
       <li>
         <strong>String Handling:</strong> Template Literals (${}) allow embedding

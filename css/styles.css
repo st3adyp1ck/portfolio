@@ -1211,7 +1211,7 @@ html {
   fill: darkred;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 220px) {
   .profile {
     height: 60vw;
     width: 60vw;

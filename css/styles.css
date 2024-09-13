@@ -532,8 +532,9 @@ button:not(:disabled),
   transition: opacity 0.4s ease;
   background-size: 400% 400%;
   filter: blur(5px);
-  opacity: 0;
+  opacity: 1;
   border-radius: inherit; /* Match the button's border-radius */
+  animation: spin-gradient 10s linear infinite;
 }
 /* Rotate the gradient to give a spinning effect */
 @keyframes spin-gradient {
@@ -566,7 +567,6 @@ button:not(:disabled),
 }
 .btn:hover::before {
   opacity: 1;
-  animation: spin-gradient 7s linear infinite;
 }
 .btn:focus-visible {
   color: var(--bs-btn-hover-color);
@@ -621,7 +621,7 @@ button:not(:disabled),
 .btn-outline-light {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
-  --bs-btn-hover-color: #000;
+  --bs-btn-hover-color: #f8f9fa;
   --bs-btn-hover-bg: #f8f9fa;
   --bs-btn-hover-border-color: #f8f9fa;
   --bs-btn-focus-shadow-rgb: 248, 249, 250;
@@ -636,7 +636,7 @@ button:not(:disabled),
 }
 
 .btn-outline-dark {
-  --bs-btn-color: #212529;
+  --bs-btn-color: #ffffff;
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #212529;

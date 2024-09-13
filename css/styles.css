@@ -531,10 +531,10 @@ button:not(:disabled),
   z-index: -1;
   transition: opacity 0.4s ease;
   background-size: 400% 400%;
-  filter: blur(5px);
+  filter: blur(5.5px);
   opacity: 1;
   border-radius: inherit; /* Match the button's border-radius */
-  animation: spin-gradient 10s linear infinite;
+  animation: spin-gradient 07s linear infinite;
 }
 /* Rotate the gradient to give a spinning effect */
 @keyframes spin-gradient {
@@ -554,14 +554,14 @@ button:not(:disabled),
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.1); /* Subtle inner glow */
   z-index: -2;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
   border-radius: inherit;
 }
 .btn:hover::after {
   background-color: rgba(255, 255, 255, 0.2); /* Increase inner glow on hover */
 }
 .btn:hover {
-  color: var(--bs-btn-hover-color);
+  color: rgb(96, 78, 78);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }

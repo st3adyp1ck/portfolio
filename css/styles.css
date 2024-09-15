@@ -870,7 +870,7 @@ button:not(:disabled),
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.545) !important;
 }
 
 .border-0 {
@@ -1342,4 +1342,9 @@ html {
   .oval-image {
     display: block;
   }
+}
+
+.card {
+  background-color: #ffffff; /* Set a solid color */
+  opacity: 0.9; /* Ensure full opacity */
 }

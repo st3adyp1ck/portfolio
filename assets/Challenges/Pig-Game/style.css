@@ -200,54 +200,12 @@ main {
   }
 
   .name {
-    display: none; /* Hide Player 1 and Player 2 */
-  }
-
-  .current-label {
-    font-size: 2.5rem;
-  }
-
-  .dice {
-    height: 8rem;
-  }
-
-  .btn {
-    font-size: 1.5rem;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .btn--roll {
-    top: 30rem;
-  }
-
-  .btn--hold {
-    top: 35rem;
-  }
-}
-
-@media (max-width: 480px) {
-  main {
-    width: 100%;
-    height: auto;
-  }
-
-  .player {
-    padding: 2rem;
-  }
-
-  .score {
-    font-size: 4rem;
-  }
-
-  .name {
-    display: none; /* Hide Player 1 and Player 2 on mobile */
-  }
-
-  /* Display player name in place of "Current" on smaller screens */
-  .current-label span {
     display: none;
   }
 
+  .current-label span {
+    display: none;
+  }
   .player--0 .current-label:after {
     content: 'Player 1';
   }
@@ -257,19 +215,28 @@ main {
   }
 
   .dice {
-    height: 6rem;
+    height: 7rem;
+    top: 23.5rem;
   }
 
   .btn {
-    font-size: 1.2rem;
-    padding: 0.4rem 1.2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
 
   .btn--roll {
-    top: 25rem;
+    top: 24.5rem;
+    left: 90px;
+    right: auto;
   }
 
   .btn--hold {
-    top: 30rem;
+    top: 24.5rem;
+    right: -20px;
+    left: auto;
+  }
+  .btn--new {
+    top: 0.2rem;
+    height: 4rem;
   }
 }

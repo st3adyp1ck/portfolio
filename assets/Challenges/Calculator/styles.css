@@ -1,121 +1,151 @@
-/* Global styles */
-html {
-  background-color: rgb(63, 63, 149);
-  color: #bd9090;
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #8b0000,
+    /* Dark Metallic Red */ #b22222,
+    /* Metallic Red */ #ff6347 30%,
+    /* Lighter Red */ #c0c0c0 50%,
+    /* Metallic Silver (middle) */ #ff6347 70%,
+    /* Lighter Red */ #b22222,
+    /* Metallic Red */ #8b0000 /* Dark Metallic Red */
+  );
+  font-family: Arial, sans-serif;
 }
-
 h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-family: Impact;
+  letter-spacing: 2px;
+  text-align: center; /* Centers the text horizontally */
+  position: absolute; /* Positions the h1 */
+  top: 40px; /* Puts it at the top of the page */
+  left: 50%; /* Moves it to the center of the page horizontally */
+  transform: translateX(-50%); /* Offsets it by 50% of its width to center it properly */
+  width: 100%; /* Ensures it spans the full width of the page */
+  margin: 0; /* Removes any default margin */
+  padding: 10px 0; /* Optional: Adds some space around the text */
+}
+@media only screen and (orientation: landscape) {
+  h1 {
+    display: none;
+  }
+}
+.calculator {
+  width: 320px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Input fields and button */
-input[type="text"] {
-  padding: 10px;
-  margin: 10px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  border: 2px solid #bd9090;
-  width: 200px;
-}
-
-button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  background-color: #4c4ca1;
+#display {
+  width: 100%;
+  height: 80px;
+  background-color: #444;
   color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
   border: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+  padding: 20px;
+  background-color: #555;
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid #444;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #3a3a85;
+.button:hover {
+  background-color: #666;
 }
 
-/* Responsive styling for lists */
-ul,
-ol {
-  list-style-position: inside;
-  text-align: left;
-  margin: 0 auto;
-  width: fit-content;
+.equal {
+  grid-column: span 2;
+  background-color: #ff5733;
+  color: white;
 }
 
-/* Error styling for invalid input */
-.error {
-  color: red;
-  font-weight: bold;
+.equal:hover {
+  background-color: #ff471a;
 }
 
-.domlist {
-  list-style-position: inside;
-  text-align: left;
-  margin: 0 auto;
-  width: fit-content;
-  padding-left: 0;
-  margin-left: 20px;
+/* Bubbles container */
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Ensure bubbles are behind the calculator */
 }
 
-/* Media Queries for responsive design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  input[type="text"] {
-    width: 150px;
-    font-size: 1rem;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 8px 15px;
-  }
-
-  ul,
-  ol {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  body {
-    padding: 5px;
-  }
+/* Individual bubbles */
+.bubble {
+  position: absolute;
+  bottom: -100px; /* Start offscreen */
+  background: rgba(255, 255, 255, 0.145); /* Light semi-transparent color */
+  border-radius: 50%;
+  animation: float 10s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
+/* Create different sizes and animation delays for each bubble */
+.bubble:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 20%;
+  animation-delay: 0s;
+}
+.bubble:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  animation-delay: 2s;
+}
+.bubble:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  animation-delay: 4s;
+}
+.bubble:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  left: 40%;
+  animation-delay: 6s;
+}
+.bubble:nth-child(5) {
+  width: 90px;
+  height: 90px;
+  left: 80%;
+  animation-delay: 8s;
+}
 
-  input[type="text"] {
-    width: 130px;
-    font-size: 0.9rem;
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
   }
-
-  button {
-    font-size: 0.9rem;
-    padding: 6px 12px;
+  50% {
+    transform: translateY(-500px) scale(1.1); /* Move upwards and slightly grow */
   }
-
-  ul,
-  ol {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-
-  body {
-    padding: 5px;
+  100% {
+    transform: translateY(-1000px) scale(1); /* Move completely offscreen */
   }
 }

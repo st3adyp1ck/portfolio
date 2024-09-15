@@ -3,78 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>St3adyP1ck's Simple Calculator</title>
+    <title>Animated Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <h1>St3adyP1ck's Simple Calculator</h1>
+    <!-- Bubble container -->
+    <div class="bubble-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <h1>Animated Calculator</h1>
 
-    <!-- Input fields for numbers -->
-    <input type="text" id="num1" placeholder="Enter first number" />
-    <input type="text" id="num2" placeholder="Enter second number" />
-
-    <!-- Button to trigger the calculation -->
-    <button id="calculateBtn">Calculate</button>
-
-    <!-- Area where the result will be displayed -->
-    <p id="result"></p>
-
-    <h2>Notes & Instructions</h2>
-    <p>
-      Welcome to the Simple Calculator! This tool allows you to perform simple addition
-      using JavaScript. It’s designed to be straightforward and easy to use. Just input
-      two numbers, and the calculator will return their sum. If one of the fields is left
-      blank, you'll be prompted to enter a number.
-    </p>
-
-    <h3>How To Use:</h3>
-
-    <!-- Step-by-step instructions for the calculator -->
-    <ol>
-      <li><strong>Enter Numbers:</strong> Provide a number in both input fields.</li>
-      <li>
-        <strong>Calculate Result:</strong> Click the ‘Calculate’ button to display the
-        result.
-      </li>
-      <li>
-        <strong>Mandatory Input:</strong> Both fields must contain numbers. An error
-        message will appear if either field is left blank.
-      </li>
-    </ol>
-
-    <h3>JavaScript Methods Used:</h3>
-
-    <!-- Explanation of the JavaScript methods applied in the script -->
-    <ul>
-      <li>
-        <strong>DOM Manipulation:</strong>
-        <ul class="domlist">
-          <li><em>document.getElementById()</em>: retrieves elements by id</li>
-          <li><em>textContent</em>: updates text content</li>
-          <li><em>classList.add()/remove()</em>: manages CSS classes dynamically.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Event Handling:</strong> The onclick method triggers a specified function
-        when the button is clicked, handling user interaction.
-      </li>
-      <li>
-        <strong>Type Conversion:</strong> <em>Number()</em> converts strings to numbers
-        for calculations, and parseInt()/parseFloat() handle integer and decimal
-        conversion.
-      </li>
-      <li>
-        <strong>Conditional Logic:</strong> if statements control the logic flow, and
-        <em>isNaN()</em> validates if inputs are not numbers.
-      </li>
-      <li>
-        <strong>String Handling:</strong> Template Literals (${}) allow embedding
-        expressions into strings, making concatenation and formatting easier.
-      </li>
-    </ul>
-
-    <!-- Link to the external JavaScript file -->
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button class="button" onclick="clearDisplay()">C</button>
+        <button class="button" onclick="deleteLast()">DEL</button>
+        <button class="button" onclick="appendCharacter('%')">%</button>
+        <button class="button" onclick="appendCharacter('/')">/</button>
+        <button class="button" onclick="appendCharacter('7')">7</button>
+        <button class="button" onclick="appendCharacter('8')">8</button>
+        <button class="button" onclick="appendCharacter('9')">9</button>
+        <button class="button" onclick="appendCharacter('*')">*</button>
+        <button class="button" onclick="appendCharacter('4')">4</button>
+        <button class="button" onclick="appendCharacter('5')">5</button>
+        <button class="button" onclick="appendCharacter('6')">6</button>
+        <button class="button" onclick="appendCharacter('-')">-</button>
+        <button class="button" onclick="appendCharacter('1')">1</button>
+        <button class="button" onclick="appendCharacter('2')">2</button>
+        <button class="button" onclick="appendCharacter('3')">3</button>
+        <button class="button" onclick="appendCharacter('+')">+</button>
+        <button class="button" onclick="appendCharacter('0')">0</button>
+        <button class="button" onclick="appendCharacter('.')">.</button>
+        <button class="button equal" onclick="calculate()">=</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

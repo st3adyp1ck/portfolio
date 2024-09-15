@@ -1,15 +1,26 @@
-"use strict";
+// Get the display element
+const display = document.getElementById("display");
 
-document.getElementById("calculateBtn").onclick = () => {
-  const num1 = document.getElementById("num1").value;
-  const num2 = document.getElementById("num2").value;
-  const resultElement = document.getElementById("result");
+// Function to append characters to the display
+function appendCharacter(char) {
+  display.value += char;
+}
 
-  if (num1 === "" || num2 === "") {
-    resultElement.textContent = "ERROR: EMPTY FIELDS: PLEASE CORRECT";
-    resultElement.classList.add("error"); // Add error class
-  } else {
-    resultElement.textContent = `Total: ${Number(num1) + Number(num2)}`;
-    resultElement.classList.remove("error"); // Remove error class
+// Function to clear the display
+function clearDisplay() {
+  display.value = "";
+}
+
+// Function to delete the last character
+function deleteLast() {
+  display.value = display.value.slice(0, -1);
+}
+
+// Function to evaluate the expression
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
   }
-};
+}

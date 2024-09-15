@@ -97,6 +97,11 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: url("/assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 hr {
@@ -1140,7 +1145,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(135deg, black 0%, red 100%);
+  background: -webkit-linear-gradient(95deg, #000000, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

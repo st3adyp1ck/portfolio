@@ -1401,7 +1401,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2vh;
+  min-height: 8vh;
   margin: 0;
   padding: 0;
   text-align: left;

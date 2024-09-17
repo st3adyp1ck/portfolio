@@ -1,3 +1,4 @@
+//Typing Text
 const textArray = ["Bit by Bit - Byte by Byte"]; // Text with copyright symbol
 const typingSpeed = 100;
 const deletingSpeed = 100;
@@ -27,4 +28,30 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(typeEffect, typingSpeed);
+});
+
+//Page Transitions
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a");
+
+  // Handle link clicks for fade-out
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Add fade-out effect
+      document.body.classList.add("page-transition-exit");
+
+      setTimeout(() => {
+        // Redirect to the new page after the fade-out effect
+        window.location.href = link.href;
+      }, 300); // Match the fade-out duration
+    });
+  });
+
+  // Fade-in effect for the new page
+  document.body.classList.add("page-transition-enter");
+  setTimeout(() => {
+    document.body.classList.add("page-transition-enter-active");
+  }, 0); // Add fade-in effect on page load
 });

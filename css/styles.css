@@ -1467,3 +1467,27 @@ p {
     font-size: 5vw; /* Even larger text on very small screens */
   }
 }
+
+/* Page Transition */
+/* Add this to your stylesheet */
+/* Fade-out effect when leaving a page */
+.page-transition {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+/* Fade-out effect when the page is exiting */
+.page-transition-exit {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+/* Fade-in effect when entering a new page */
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

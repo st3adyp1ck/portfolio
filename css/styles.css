@@ -1059,7 +1059,7 @@ button:not(:disabled),
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #f1f4f4 !important;
 }
 
 .bg-primary {
@@ -1381,4 +1381,58 @@ html {
 .card {
   background-color: #ffffff; /* Set a solid color */
   opacity: 0.9; /* Ensure full opacity */
+}
+.card2 {
+  background-color: rgba(199, 24, 24, 0); /* Red with 70% opacity */
+  /* No need for opacity here, since the transparency is controlled by the background color */
+  opacity: 0.8;
+}
+
+.card2 .btn {
+  background-color: #ff0000; /* Solid button color */
+  opacity: 1 !important; /* Ensure full opacity for buttons */
+}
+.translucent2-bg {
+  background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+}
+/* Typing Container*/
+/* Set a flexible container */
+.typing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Responsive typing container */
+.typing-container {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2vw; /* Scales with viewport width */
+  white-space: nowrap;
+  border-right: 2px solid; /* Cursor effect */
+  overflow: visible; /* Allow container to expand */
+  display: inline-block; /* Keeps text in one line but allows expansion */
+  text-align: left;
+}
+
+/* Smaller copyright text */
+.small-copyright {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+/* Media queries to adjust for smaller screens */
+@media (max-width: 768px) {
+  .typing-container {
+    font-size: 4vw; /* Larger text on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-container {
+    font-size: 5vw; /* Even larger text on very small screens */
+  }
 }

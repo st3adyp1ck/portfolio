@@ -1064,6 +1064,10 @@ button:not(:disabled),
   --bs-text-opacity: 1;
   color: #f1f4f4 !important;
 }
+.text-muted2 {
+  --bs-text-opacity: 1;
+  color: #576666 !important;
+}
 
 .bg-primary {
   --bs-bg-opacity: 1;
@@ -1148,6 +1152,12 @@ button:not(:disabled),
 body,
 html {
   height: 100%;
+}
+
+body,
+p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .bg-gradient-primary-to-secondary {
@@ -1260,7 +1270,19 @@ html {
     width: 3vw;
     left: -4vw;
   }
+  .card .p-5 {
+    padding: 1.5rem; /* Decrease padding for smaller screens */
+  }
+  .container,
+  .row,
+  .col-lg-11,
+  .col-xl-9,
+  .col-xxl-8 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
+
 @media (min-width: 768px) {
   .profile {
     height: 50vw;

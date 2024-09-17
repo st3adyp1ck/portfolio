@@ -925,6 +925,9 @@ button:not(:disabled),
 .mt-5 {
   margin-top: 3rem !important;
 }
+.mt-3 {
+  margin-top: 0.75rem !important;
+}
 
 .mt-auto {
   margin-top: auto !important;
@@ -1154,6 +1157,12 @@ html {
 
 .text-gradient {
   background: -webkit-linear-gradient(95deg, #000000, #ff0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient2 {
+  background: -webkit-linear-gradient(290deg, #ffffff, red);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

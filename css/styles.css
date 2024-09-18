@@ -1335,6 +1335,12 @@ p {
     padding-left: 0rem;
     padding-right: 0rem;
   }
+
+  .smoked-glass {
+    background: rgba(0, 0, 0, 0.85); /* A darker fallback without blur */
+    /* Optionally remove the backdrop-filter if unsupported */
+    backdrop-filter: none;
+  }
 }
 
 @media (min-width: 768px) {

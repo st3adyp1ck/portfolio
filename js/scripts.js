@@ -1,3 +1,12 @@
+//Smoked Glass Intro
+window.addEventListener("scroll", function () {
+  const smokedGlass = document.querySelector(".smoked-glass");
+
+  if (window.scrollY > 50) {
+    // Adjust the scroll threshold as needed
+    smokedGlass.classList.add("hidden");
+  }
+});
 //Typing Text
 const textArray = ["Bit by Bit - Byte by Byte"]; // Text with copyright symbol
 const typingSpeed = 100;

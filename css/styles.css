@@ -1,6 +1,9 @@
+/* Character encoding for special characters */
 @charset "UTF-8";
 
+/* Root variables (CSS custom properties) */
 :root {
+  /* Primary Bootstrap color palette */
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -11,8 +14,12 @@
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
+
+  /* Basic black and white */
   --bs-black: #000;
   --bs-white: #fff;
+
+  /* Various shades of gray */
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
@@ -24,6 +31,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
+
+  /* Primary Bootstrap color variations */
   --bs-primary: #1e30f3;
   --bs-secondary: #e21e80;
   --bs-success: #198754;
@@ -32,6 +41,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+
+  /* RGB versions of colors for flexibility */
   --bs-primary-rgb: 102, 15, 15;
   --bs-secondary-rgb: 226, 30, 128;
   --bs-success-rgb: 25, 135, 84;
@@ -44,64 +55,97 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+
+  /* Font families */
   --bs-font-sans-serif: "Plus Jakarta Sans";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+
+  /* Gradient background */
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
+
+  /* Default body font properties */
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+
+  /* Border settings */
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+
+  /* Border radius values for different elements */
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
+
+  /* Link color settings */
   --bs-link-color: #1e30f3;
   --bs-link-hover-color: #1826c2;
+
+  /* Code block highlight color */
   --bs-code-color: #e21e80;
+
+  /* Background for highlighted elements (like warnings) */
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Ensure consistent box-sizing across all elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Enable smooth scrolling if the user has no reduced-motion preference */
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
+/* Global styles for the body element */
 body {
+  /* Remove default margins */
   margin: 0;
+
+  /* Use the default font family set in the root */
   font-family: var(--bs-body-font-family);
+
+  /* Use the defined font size, weight, and line height */
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+
+  /* Default text color and background color */
   color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
+
+  /* Ensure text scaling is uniform across browsers */
   -webkit-text-size-adjust: 100%;
+
+  /* Disable tap highlights on touch devices */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  /* Background image setup */
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  padding: 0;
+  height: 100vh;
 }
 
 hr {
@@ -120,6 +164,10 @@ h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+
+  position: relative; /* Ensure h1 is positioned */
+  z-index: 1.5; /* Match the z-index value of the picture */
+  color: white; /* Or any other color to make the text visible */
 }
 
 h1 {
@@ -273,8 +321,8 @@ button:not(:disabled),
 }
 
 .display-4 {
-  font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-size: calc(1.475rem + 2vw);
+  font-weight: 200;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -621,9 +669,9 @@ button:not(:disabled),
   --bs-btn-color: #fff;
   --bs-btn-bg: #f31e1e; /* Red shade */
   --bs-btn-border-color: #f31e1e; /* Red shade */
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-bg: #cf291a; /* Red shade */
-  --bs-btn-hover-border-color: #c22618; /* Red shade */
+  --bs-btn-hover-border-color: #996b66; /* Red shade */
   --bs-btn-focus-shadow-rgb: 245, 79, 64; /* Adjusted to match red shades */
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #c21818; /* Red shade */
@@ -843,6 +891,8 @@ button:not(:disabled),
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+  position: relative; /* Ensure the badge is positioned */
+  z-index: 1.5; /* Match the z-index value of the other elements */
 }
 
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
@@ -989,6 +1039,10 @@ button:not(:disabled),
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
+}
+
+.py-2 {
+  padding: 5px;
 }
 
 .py-3 {
@@ -1166,7 +1220,7 @@ p {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(95deg, #000000, #ff0000);
+  background: -webkit-linear-gradient(95deg, #ff8a54, #ff0000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1447,6 +1501,9 @@ p {
   overflow: visible; /* Allow container to expand */
   display: inline-block; /* Keeps text in one line but allows expansion */
   text-align: left;
+  position: relative; /* Ensure typing container is positioned */
+  z-index: 1.5; /* Match the z-index value of the h1 and picture */
+  color: white; /* Ensure the text is visible */
 }
 
 /* Smaller copyright text */
@@ -1490,4 +1547,32 @@ p {
 .page-transition-enter-active {
   opacity: 1;
   transition: opacity 0.5s ease-in;
+}
+
+/* Smoked glass effect */
+.smoked-glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark smoke effect */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  z-index: 1.5; /* Ensure it's on top of the background but below the content */
+
+  transition: opacity 1s ease;
+}
+
+/* Fade out the smoked glass when scrolling */
+.smoked-glass.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevents interactions when hidden */
+}
+
+/* Content styles */
+.content {
+  position: relative;
+  z-index: 2; /* Puts the content above the smoked glass effect */
+  padding: 20px;
+  color: white; /* Text color so it's visible */
 }

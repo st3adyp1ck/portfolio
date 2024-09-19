@@ -167,11 +167,12 @@ h1 {
 
   position: relative; /* Ensure h1 is positioned */
   z-index: 1.5; /* Match the z-index value of the picture */
-  color: white; /* Or any other color to make the text visible */
+  color: rgb(158, 114, 114); /* Or any other color to make the text visible */
 }
 
 h1 {
   font-size: calc(1.375rem + 1.5vw);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 1200px) {
   h1 {
@@ -181,6 +182,7 @@ h1 {
 
 h2 {
   font-size: calc(1.325rem + 0.9vw);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow for better contrast */
 }
 @media (min-width: 1200px) {
   h2 {

@@ -1,0 +1,22 @@
+.clickable-video video {
+  display: none;
+}
+
+.clickable-video .thumbnail {
+  cursor: pointer;
+}
+
+.card-header .clickable-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.card-header .thumbnail, .card-header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

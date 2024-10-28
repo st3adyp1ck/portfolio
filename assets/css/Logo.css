@@ -1,0 +1,15 @@
+#brand-logo {
+  background-image: url(brands/logo.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+
+@media (min-width: 300px) {
+  .navbar-brand {
+    transform: auto;
+  }
+}
+

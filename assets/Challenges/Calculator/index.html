@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Bubble container -->
+    <div class="bubble-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+    <h1>Animated Calculator</h1>
+
+    <div class="calculator">
+      <input type="text" id="display" disabled />
+      <div class="buttons">
+        <button class="button" onclick="clearDisplay()">C</button>
+        <button class="button" onclick="deleteLast()">DEL</button>
+        <button class="button" onclick="appendCharacter('%')">%</button>
+        <button class="button" onclick="appendCharacter('/')">/</button>
+        <button class="button" onclick="appendCharacter('7')">7</button>
+        <button class="button" onclick="appendCharacter('8')">8</button>
+        <button class="button" onclick="appendCharacter('9')">9</button>
+        <button class="button" onclick="appendCharacter('*')">*</button>
+        <button class="button" onclick="appendCharacter('4')">4</button>
+        <button class="button" onclick="appendCharacter('5')">5</button>
+        <button class="button" onclick="appendCharacter('6')">6</button>
+        <button class="button" onclick="appendCharacter('-')">-</button>
+        <button class="button" onclick="appendCharacter('1')">1</button>
+        <button class="button" onclick="appendCharacter('2')">2</button>
+        <button class="button" onclick="appendCharacter('3')">3</button>
+        <button class="button" onclick="appendCharacter('+')">+</button>
+        <button class="button" onclick="appendCharacter('0')">0</button>
+        <button class="button" onclick="appendCharacter('.')">.</button>
+        <button class="button equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

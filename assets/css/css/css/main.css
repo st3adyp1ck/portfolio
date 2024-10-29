@@ -33,7 +33,7 @@
 
 :root {
   --nav-color: #fafafa;
-  --nav-hover-color: #18d26e;
+  --nav-hover-color: #fa372d;
   --nav-mobile-background-color: #1a1a1a;
   --nav-dropdown-background-color: #1a1a1a;
   --nav-dropdown-color: #fafafa;
@@ -191,14 +191,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 1200px) {
-  .navmenu ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
+.navmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 @media (min-width: 1200px) {

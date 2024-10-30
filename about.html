@@ -30,9 +30,6 @@
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/card-3-column-animation-shadows-images.css">
-    <link rel="stylesheet" href="assets/css/Logo.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Dropdown-List-Item.css">
     <link rel="stylesheet" href="assets/css/Swiper-Card-Blog.css">
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/css/aos.min.css">
@@ -43,12 +40,7 @@
     <link rel="stylesheet" href="assets/css/css/vendor/glightbox/css/glightbox.min.css">
     <link rel="stylesheet" href="assets/css/css/css/main.css">
     <link rel="stylesheet" href="assets/css/css/Neon-Button.css">
-    <link rel="stylesheet" href="assets/css/--mp---Testimonials-Slider-Testimonials-Slider.css">
-    <link rel="stylesheet" href="assets/css/Dark-NavBar-Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/Dark-NavBar-Navigation-with-Search.css">
-    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
     <link rel="stylesheet" href="assets/css/Features-Image-icons.css">
-    <link rel="stylesheet" href="assets/css/iframe-1.css">
     <link rel="stylesheet" href="assets/css/Neon-Button.css">
     <link rel="stylesheet" href="assets/css/Optitmized-video-component---by-Gilmar-de-O-Aguiar.css">
     <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
@@ -59,8 +51,8 @@
 
 <body class="about-page container-xxl mx-auto" style="font-family: 'Montserrat Alternates', sans-serif;margin-top: 70px;overflow-x: hidden;">
     <header class="d-flex align-items-center header fixed-top" id="header">
-        <div class="container-fluid d-flex justify-content-between align-items-center container-xl position-relative"><a class="d-flex align-items-center logo" href="index.html"><img src="assets/img/CompanyProfile/NorthStar%20Logo.png" width="34" height="32" style="margin-right: 2px;padding-bottom: 0px;margin-bottom: 11px;" alt="Northstar Mini Logo">
-                <h3 class="sitename" style="font-family: 'Montserrat Alternates', sans-serif;"><span style="color: rgb(55, 154, 214);">Northstar </span><span style="color: rgb(250, 55, 45);">Coding</span></h3>
+        <div class="container-fluid d-flex justify-content-between align-items-center container-xl position-relative"><a class="d-flex align-items-center logo" href="https://www.northstarcoding.com" data-bs-target="https://www.northstarcoding.com" style="font-size: 21px;font-family: 'Montserrat Alternates', sans-serif;"><img src="assets/img/CompanyProfile/NorthStar%20Logo.png" width="34" height="32" style="margin-right: 2px;padding-bottom: 0px;margin-bottom: 11px;" alt="Northstar Mini Logo">
+                <h3 class="sitename" style="font-family: 'Montserrat Alternates', sans-serif;font-size: 23px;"><span style="color: rgb(55, 154, 214);">Northstar </span><span style="color: rgb(250, 55, 45);">Coding</span></h3>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul></ul>
@@ -71,10 +63,10 @@
                     <li class="nav-item"><a class="nav-link" href="../pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link dropdown" href="../contact.html">Contact</a></li>
                 </ul>
-            </nav><i class="d-xl-none mobile-nav-toggle bi bi-list"></i>
+            </nav><i class="d-xl-none pulse animated infinite mobile-nav-toggle bi bi-list"></i>
         </div>
     </header>
-    <div data-bss-parallax-bg="true" style="height: 610px;background: url(&quot;assets/img/header4.webp&quot;) center / cover no-repeat;">
+    <div data-bss-parallax-bg="true" id="parallaxBG" style="/*height: 100vh;*//*background: url(&quot;assets/img/header4.webp&quot;) center / cover no-repeat;*/background-position: center !important;background-attachment: fixed !important;background-repeat: no-repeat !important;height: 100vh !important;background-image: url('assets/img/header4.webp') !important;">
         <div class="row py-5">
             <div class="col text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-items-md-center mb-4">
                 <div style="max-width: 450px;">
@@ -109,7 +101,7 @@
         <section id="about" class="about section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-4"><img class="img-fluid glowBorder" data-bss-hover-animate="pulse" src="assets/img/CompanyProfile/Cyborg%20No-BG.png" alt="Profile-Picture" style="margin-top: 40px;padding-top: 10px;border-radius: 60px;border-style: solid;border-color: #379ad6;"></div>
+                    <div class="col-lg-4"><img class="img-fluid pulse animated infinite glowBorder" src="assets/img/CompanyProfile/Cyborg%20No-BG.png" alt="Profile-Picture" style="margin-top: 40px;padding-top: 10px;border-radius: 60px;border-style: solid;border-color: #379ad6;"></div>
                     <div class="col-lg-8 content">
                         <h2><span style="color: rgb(55, 154, 214);">Full-Stack Developer</span> &amp; <span style="color: rgb(250, 55, 45);">Digital Solution Architect</span></h2>
                         <p class="fst-italic py-3"> With extensive experience in building scalable web applications, I specialize in delivering high-performance digital solutions. From intuitive UI/UX design to robust back-end systems, I combine creativity and technology to craft impactful, user-focused web experiences. </p>
@@ -306,6 +298,7 @@
             </div>
         </div>
     </footer>
+    <div class="d-flex" id="preloader"></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/aos.min.js"></script>

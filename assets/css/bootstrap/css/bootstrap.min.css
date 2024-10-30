@@ -15927,3 +15927,7 @@ body {
   }
 }
 
+#parallaxBG {
+  background-size: contain !important;
+}
+

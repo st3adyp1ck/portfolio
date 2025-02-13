@@ -3,7 +3,7 @@
   background-image: -webkit-linear-gradient(top,#000000 0,#000000 100%);
   background-image: -o-linear-gradient(top,#000000 0,#000000 100%);
   background-image: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
-  background-image: linear-gradient(to bottom,#000000 0,#000000 100%);
+  background-image: linear-gradient(to bottom,#000000 0,#fa372d 100%);
   transition: all 1s;
   box-shadow: 0 0 #000;
   text-shadow: 0 0 0px #000000;
@@ -14,15 +14,15 @@
 neon.button.cssbtn-neon:focus, .btn-neon:hover, .btn-neon:active {
   text-shadow: 0 4px 0 #000000;
   background-color: #000;
-  color: #06e1ff;
+  color: #fa372d;
   box-shadow: 2px 2px #666;
   text-shadow: 1px 4px 6px #ffffff;
-  border-color: #06e1ff;
+  border-color: #379ad6;
 }
 
 body {
-  background-color: #000000;
-  margin-top: 50px;
-  margin-left: 50px;
+  /*background-color: #000000;*/
+  /*margin-top: 50px;*/
+  /*margin-left: 50px;*/
 }
 
